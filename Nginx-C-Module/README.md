@@ -1,4 +1,4 @@
-# Nginx-NJS Module
+# Nginx-C Custom Module
 
 This example demonstrates how to create a custom Nginx module using C.
 
