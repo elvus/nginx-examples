@@ -81,7 +81,3 @@ The Nginx configuration includes:
 ## Logs
 
 Logs are stored in the `logs/` directory.
-
-## Conclusion
-
-This setup allows you to run an Nginx server in a Docker container with custom JavaScript logic to handle specific routes and proxy requests based on headers.
