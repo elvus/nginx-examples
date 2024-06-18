@@ -4,7 +4,7 @@
 
 This project sets up an Nginx server using Docker Compose. The Nginx server is configured to handle requests in two ways:
 1. Serve a custom response at the `/main` endpoint.
-2. Proxy requests to either `Google` or `Yahoo` based on the authorization header at the `/search` endpoint.
+2. Proxy requests to either `http.cat` or `api.github.com` based on the authorization header at the `/api` endpoint.
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ The Nginx configuration includes:
   - Listens on port `80`.
   - **Location `/main`**:
     - Executes the `main` function from `main.js` to return "Hello, world!".
-  - **Location `/search`**:
+  - **Location `/api`**:
     - Uses a DNS resolver (`1.1.1.1`).
     - Proxies the request to a URL determined by the `setUrlByAuthorization` function in `main.js`.
 
@@ -53,8 +53,8 @@ The Nginx configuration includes:
 
 - **main**: Returns a "Hello, world!" message.
 - **setUrlByAuthorization**: Chooses the URL based on the `authorization` header:
-  - `abc`: `https://google.com`
-  - Otherwise: `https://yahoo.com`
+  - `Bearer Oct0c4t!`: `http://http.cat/410`
+  - Otherwise: `https://api.github.com/octocat`
 
 ## Usage
 
