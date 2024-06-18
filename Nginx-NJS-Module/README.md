@@ -53,7 +53,7 @@ The Nginx configuration includes:
 
 - **main**: Returns a "Hello, world!" message.
 - **setUrlByAuthorization**: Chooses the URL based on the `authorization` header:
-  - `Bearer Oct0c4t!`: `http://http.cat/410`
+  - `Bearer Oct0c4t!`: `http://http.cat/202`
   - Otherwise: `https://api.github.com/octocat`
 
 ## Usage
@@ -75,7 +75,7 @@ The Nginx configuration includes:
 4. **Access the service**:
    - `http://localhost:8080/main`: Should return "Hello, world!".
    - `http://localhost:8080/api`:
-     - With `authorization` header set to `Bearer Oct0c4t!`: Proxies to `http://http.cat/410`.
+     - With `authorization` header set to `Bearer Oct0c4t!`: Proxies to `http://http.cat/202`.
      - Otherwise: Proxies to `https://api.github.com/octocat`.
 
 ## Logs

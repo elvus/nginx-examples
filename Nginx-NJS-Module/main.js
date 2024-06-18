@@ -6,7 +6,7 @@ const main = (r) => {
 
 const setUrlByAuthorization = (r) => {
     if (r.headersIn.authorization == "Bearer Oct0c4t!"){
-        return "http://http.cat/410";
+        return "http://http.cat/202";
     }else{
         return "https://api.github.com/octocat";
     }
